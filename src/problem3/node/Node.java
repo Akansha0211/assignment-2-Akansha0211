@@ -7,6 +7,6 @@
 package problem3.node;
 
 public class Node<E> {
-    private E item;
-    private Node next;
+    public E item;;
+    public Node next;
 }

@@ -8,9 +8,10 @@ package problem3.myqueue;
 
 import problem3.node.Node;
 
+import java.util.NoSuchElementException;
 import java.util.Queue;
 
-public class MyPriorityQueue {
+public class MyPriorityQueue<E> {
     // number of elements on queue
     private int n;
     //beginning of queue
@@ -43,5 +44,16 @@ public class MyPriorityQueue {
     public int size(){
         return n;
     }
+
+    /**
+     * This method returns the least recently added item to this queue
+     * @return the item least recently added to ths queue
+     *
+     */
+    public E peek(){
+        if (isEmpty() )throw new NoSuchElementException("Queue underflow");
+        return (E) first.item;
+    }
+
 
 }
