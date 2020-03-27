@@ -54,6 +54,21 @@ public class MyPriorityQueue<E> {
         if (isEmpty() )throw new NoSuchElementException("Queue underflow");
         return (E) first.item;
     }
+    /**
+     * This method add the item to the queue
+     * @param item the item to enqueue
+     */
+    public void enqueue(E item){
+        Node oldlast = last;
+        last = new Node();
+        last.item = item;
+        last.next = null;
+        if(isEmpty()) {
+            first = last;
+        }
+        else  oldlast.next = last;
+        n++;
+    }
 
 
 }
