@@ -15,9 +15,9 @@ public class MyPriorityQueue<E> implements Queue<E> {
     // number of elements on queue
     private int size;
     //beginning of queue
-    private Node<E> front;
+    private Node front;
     //end of queue
-    private Node<E> rear;
+    private Node rear;
 
     @Override
     public E dequeue() {
@@ -28,10 +28,22 @@ public class MyPriorityQueue<E> implements Queue<E> {
     public void enqueue() {
 
     }
+    public void enqueue(E item){
+        Node<E> oldRear =  rear;
+        rear = new Node<E>();
+        rear.item = null;
+        if (isEmpty()){
+            front = rear;
+        }
+        else oldRear.next = rear;
+        size++;
+
+    }
+
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return (size == 0);
     }
 
     @Override

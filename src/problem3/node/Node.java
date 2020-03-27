@@ -14,6 +14,10 @@ public class Node<E> {
         this.next = next;
     }
 
+    public Node() {
+
+    }
+
     public E getItem() {
         return item;
     }
