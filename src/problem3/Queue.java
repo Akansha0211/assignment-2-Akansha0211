@@ -16,11 +16,14 @@ package problem3;
  * It allows programmer to pass the object type the queue will store at run time
  * A special feature of Jva called  GENERICS brings us this capability.
  */
-public interface Queue<E> {
+public interface Queue<E> extends Iterable<E>{
     //This method will remove the element from Th Queue
     E dequeue();
     // This method will add elements to the end of the Queue
+    void enqueue(int i);
+
     void enqueue();
+
     // Returns true if the queue is empty , false otherwise
     boolean isEmpty();
     //Returns the number of elements in the queue right now
