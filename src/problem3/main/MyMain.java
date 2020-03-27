@@ -16,6 +16,16 @@ import java.util.Queue;
 public class MyMain {
     public static void main(String[] args) {
        MyPriorityQueue<Student> queue = new MyPriorityQueue<Student>();
+        queue.enqueue(10);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        queue.enqueue(60);
+        queue.enqueue(70);
+        System.out.println("Queue contains following items til thus moment");
+        for(Student i : queue ){
+            System.out.println(i);
+        }
 
     }
 }
