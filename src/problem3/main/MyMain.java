@@ -15,7 +15,7 @@ import java.util.Queue;
 // use problem5.student.Student class to create object of student
 public class MyMain {
     public static void main(String[] args) {
-        Queue<Student> queue = (Queue<Student>) new MyPriorityQueue<Student>();
+        MyPriorityQueue<Student> queue = new MyPriorityQueue<Student>();
 
     }
 }

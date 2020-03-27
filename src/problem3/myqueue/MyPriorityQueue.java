@@ -69,6 +69,18 @@ public class MyPriorityQueue<E> {
         else  oldlast.next = last;
         n++;
     }
+//    public E dequeue(){
+//        if(isEmpty())throw new NoSuchElementException("Queue underflow");
+//         E item = first.item;
+//         first = first.next;
+//         n--;
+//         if (isEmpty()){
+//             last = null;
+//             return item;
+//
+//         }
+//
+//    }
 
 
 

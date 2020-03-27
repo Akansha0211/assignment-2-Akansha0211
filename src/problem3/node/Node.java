@@ -9,4 +9,5 @@ package problem3.node;
 public class Node<E> {
     public E item;;
     public Node next;
+
 }
