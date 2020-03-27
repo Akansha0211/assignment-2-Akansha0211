@@ -36,4 +36,12 @@ public class MyPriorityQueue {
         return first == null;
     }
 
+    /**
+     * Returns the number of items in this queue
+     * @return the number of items in this queue
+     */
+    public int size(){
+        return n;
+    }
+
 }
