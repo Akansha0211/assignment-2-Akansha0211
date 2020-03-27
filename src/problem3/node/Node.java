@@ -9,5 +9,9 @@ package problem3.node;
 public class Node<E> {
     public E item;;
     public Node next;
+    public Node (E item , Node next){
+        this.item = item;
+        this.next = next;
+    }
 
 }
