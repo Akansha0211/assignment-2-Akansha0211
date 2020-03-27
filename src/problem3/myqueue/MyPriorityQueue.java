@@ -9,15 +9,14 @@ package problem3.myqueue;
 import problem3.node.Node;
 
 import java.util.NoSuchElementException;
-import java.util.Queue;
 
 public class MyPriorityQueue<E> {
     // number of elements on queue
     private int n;
     //beginning of queue
-    private Node first;
+    private Node<E> first;
     //end of queue
-    private Node last;
+    private Node<E> last;
 
     //create a constructor for the MyPriorityQueue
     //initializes an empty queue
@@ -52,15 +51,16 @@ public class MyPriorityQueue<E> {
      */
     public E peek(){
         if (isEmpty() )throw new NoSuchElementException("Queue underflow");
-        return (E) first.item;
+        return first.item;
     }
     /**
      * This method add the item to the queue
+     * Adding of element  in  Queue is always done at the end
      * @param item the item to enqueue
      */
     public void enqueue(E item){
-        Node oldlast = last;
-        last = new Node();
+        Node<E> oldlast = last;
+        last = new Node<>();
         last.item = item;
         last.next = null;
         if(isEmpty()) {
@@ -69,6 +69,7 @@ public class MyPriorityQueue<E> {
         else  oldlast.next = last;
         n++;
     }
+
 
 
 }
