@@ -28,4 +28,12 @@ public class MyPriorityQueue {
 
     }
 
+    /**
+     * This method returns True when Queue is empty.
+     * @return true if this queue is empty
+     */
+    public boolean isEmpty(){
+        return first == null;
+    }
+
 }
