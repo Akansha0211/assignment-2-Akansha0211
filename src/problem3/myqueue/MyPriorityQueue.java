@@ -18,4 +18,14 @@ public class MyPriorityQueue {
     //end of queue
     private Node last;
 
+    //create a constructor for the MyPriorityQueue
+    //initializes an empty queue
+
+    public MyPriorityQueue(){
+        first = null;
+        last = null;
+        n = 0;
+
+    }
+
 }
