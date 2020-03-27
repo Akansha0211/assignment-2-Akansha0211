@@ -6,17 +6,38 @@
  */
 package problem3.myqueue;
 
+import problem3.Queue;
 import problem3.node.Node;
 
 import java.util.NoSuchElementException;
 
-public class MyPriorityQueue<E> {
+public class MyPriorityQueue<E> implements Queue<E> {
     // number of elements on queue
     private int size;
     //beginning of queue
-    private Node<E> first;
+    private Node<E> front;
     //end of queue
-    private Node<E> last;
+    private Node<E> rear;
+
+    @Override
+    public E dequeue() {
+        return null;
+    }
+
+    @Override
+    public void enqueue() {
+
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public int size() {
+        return 0;
+    }
 
     //create a constructor for the MyPriorityQueue
     //initializes an empty queue
