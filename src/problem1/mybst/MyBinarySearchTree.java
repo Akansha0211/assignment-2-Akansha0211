@@ -41,6 +41,14 @@ public class MyBinarySearchTree {
             //not complete
         }
         }
+        public void inOrder(TreeNode temp){
+            if (temp == null){
+                return;
+            }
+            else{
+                //not complete...
+            }
+        }
 
 
     }
