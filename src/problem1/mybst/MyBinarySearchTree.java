@@ -22,6 +22,7 @@ public class MyBinarySearchTree {
             TreeNode parent = null;
             while(current!= null){
                 parent = current;
+                //not complete...
             }
         }
 
@@ -31,6 +32,14 @@ public class MyBinarySearchTree {
         }
         public void setRoot(TreeNode root){
         this.root = root;
+        }
+        public void preOrder(TreeNode temp){
+        if(temp == null){
+            return ;
+        }
+        else{
+            //not complete
+        }
         }
 
 
